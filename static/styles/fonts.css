@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../../src/styles/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "DM Serif Display";
+  src: url("../fonts/DMSerifDisplay-Regular.ttf");
+}

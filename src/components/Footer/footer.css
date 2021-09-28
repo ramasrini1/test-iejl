@@ -1,0 +1,139 @@
+footer {
+  /* background: linear-gradient(90deg, #1d1e1f 0%, #2d2e30 100%); */
+  z-index: 20;
+}
+
+footer .wrapper {
+  max-width: 1280px;
+  margin: auto;
+}
+
+footer .main {
+  padding-top: 74px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer .logo-wrapper {
+  max-width: 165px;
+}
+
+footer .logo-wrapper img {
+  width: 24px;
+  margin-right: 10px;
+}
+
+footer .logo-wrapper div {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 37px;
+  color: white;
+}
+.white-theme footer .logo-wrapper div {
+  color: #0a0517;
+}
+
+footer ul.list-link {
+  width: calc(100% - 165px);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+footer ul.list-link li {
+  list-style-type: none;
+  margin-left: 30px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+footer section:last-child .wrapper {
+  padding-top: 15px;
+  padding-bottom: 22px;
+}
+
+footer section:last-child p {
+  opacity: 0.5;
+  color: white;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+footer section:last-child p a {
+  text-decoration: underline;
+}
+
+footer .join-discord div {
+  font-size: 14px;
+  line-height: 20px;
+  color: white;
+  padding-left: 11px;
+}
+
+footer .join-discord svg {
+  max-width: 216px;
+  margin-bottom: 5px;
+}
+
+.copyright {
+  max-width: 380px;
+  color: white;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+@media (max-width: 768px) {
+  footer .main {
+    padding-top: 90px;
+    padding-bottom: 35px;
+  }
+
+  footer .logo-wrapper {
+    margin-bottom: 50px;
+  }
+
+  footer ul.list-link {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  footer ul.list-link li {
+    margin-left: 0;
+    margin-bottom: 11px;
+  }
+
+  footer ul.list-link li:last-child {
+    margin-bottom: 0;
+  }
+
+  footer section:last-child .wrapper {
+    flex-direction: row-reverse;
+  }
+
+  footer .join-discord {
+    margin-left: -11px;
+    margin-bottom: 65px;
+  }
+
+  footer section:last-child .wrapper {
+    padding-bottom: 34px;
+  }
+}
+
+.white-theme footer {
+  background-color: white;
+}
+
+.white-theme footer section:last-child p,
+.white-theme footer ul.list-link li a,
+.white-theme footer .join-discord div,
+.white-theme footer .copyright {
+  color: #0a0517;
+}
+
+.white-theme footer .main {
+  border-bottom: 1px solid rgba(3, 1, 1, 0.1);
+  border-top: 1px solid rgba(32, 32, 32, 0.1);
+}

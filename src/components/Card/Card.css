@@ -1,0 +1,38 @@
+.card {
+  width: calc((100% - 180px) / 4);
+  margin-right: 60px;
+}
+
+.card:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 1024px) {
+  .card {
+    width: calc((100% - 90px) / 4);
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+.svg-wrapper {
+  height: 100px;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.separator {
+  width: 28px;
+  border: 1px solid #000000;
+  margin-bottom: 24px;
+}

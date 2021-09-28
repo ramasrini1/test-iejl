@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+
+  @font-face {
+    font-family: "Poppins", Inter, sans-serif;
+    font-style: normal;
+    src: local("Poppins"), url(./fonts/Poppins-Black.ttf) format("truetype");
+    src: url("./fonts/Poppins-Light.ttf") format("truetype");
+    src: local("Poppins"), local("Poppins"),
+      url("./fonts/Poppins-ThinItalic.ttf") url("./fonts/Poppins-Thin.ttf")
+        url("./fonts/Poppins-SemiBoldItalic.ttf")
+        url("./fonts/Poppins-SemiBold.ttf") url("./fonts/Poppins-Regular.ttf")
+        url("./fonts/Poppins-MediumItalic.ttf") url("./fonts/Poppins-Medium.ttf")
+        url("./fonts/Poppins-Light.ttf") url("./fonts/Poppins-LightItalic.ttf")
+        url("./fonts/Poppins-ExtraLight.ttf")
+        url("./fonts/Poppins-ExtraLightItalic.ttf")
+        url("./fonts/Poppins-ExtraBoldItalic.ttf")
+        url("./fonts/Poppins-ExtraBold.ttf") url("./fonts/Poppins-Bold.ttf")
+        url("./fonts/Poppins-BlackItalic.ttf") url("./fonts/Poppins-Black.ttf");
+  }
+
+  @font-face {
+    font-family: "DM Serif Display", "sans-serif";
+    font-style: normal;
+    src: local("DMSerifDisplay"), url(../../static/fonts/DMSerifDisplay-Regular.ttf) format("truetype");
+  }
+
+  body{
+    font-family: 'Poppins', sans-serif;
+  }
+
+}
+
+@layer components{
+  .main-container{
+    @apply xl:max-w-7xl mx-auto sm:px-8 px-5;
+  }
+}
+
+.button {
+  display: block;
+  font-size: 16px;
+  line-height: 23px;
+  padding: 5.5px;
+  font-weight: 500;
+  border-radius: 4px;
+  color: #6366f1;
+  background-color: #e2e3ff;
+  outline: none !important;
+  text-align: center;
+}
+
+.button-primary {
+  background-color: #6366f1;
+  color: #fff;
+}

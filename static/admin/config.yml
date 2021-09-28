@@ -1,0 +1,24 @@
+backend:
+  name: git-gateway
+  branch: main
+  repo: Hakkei-Co/hakkei-website-v3
+  commit_messages:
+    create: 'Create {{collection}} “{{slug}}”'
+    update: 'Update {{collection}} “{{slug}}”'
+    delete: 'Delete {{collection}} “{{slug}}”'
+    uploadMedia: '[skip ci] Upload “{{path}}”'
+    deleteMedia: '[skip ci] Delete “{{path}}”'
+site_url: https://hakkei.co
+media_folder: static/assets
+public_folder: /assets
+collections:
+  - name: blog
+    label: Blog
+    folder: "content/blog"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: date, label: Date, widget: datetime }
+      - { name: title, label: Title }
+      - { name: body, label: Body, widget: markdown }

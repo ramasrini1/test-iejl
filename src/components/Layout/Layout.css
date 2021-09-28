@@ -1,0 +1,13 @@
+.bg {
+  -webkit-clip-path: polygon(72% 74%, 100% 27%, 100% 100%, 5% 100%);
+  clip-path: polygon(72% 74%, 100% 27%, 100% 100%, 5% 100%);
+  z-index: -1;
+  background-color: #226dbc;
+}
+
+.bg2 {
+  z-index: -2;
+  background-color: #2a5f98;
+  -webkit-clip-path: polygon(64% 100%, 100% 27%, 62% 67%, 4% 100%);
+  clip-path: polygon(64% 100%, 100% 27%, 62% 67%, 4% 100%);
+}

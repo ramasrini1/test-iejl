@@ -1,0 +1,8 @@
+
+.parallel {
+  width: 5em;
+   text-align: center;
+  clip-path: polygon(14% 0%, 100% 0%, 86% 100%, 0% 100%);
+  background-color:#C75830;
+  color: white;
+}

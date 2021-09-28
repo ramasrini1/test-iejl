@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+@font-face {
+  font-family: "Poppins", Inter, sans-serif;
+  font-style: normal;
+  src: local("Poppins"), url(./fonts/Poppins-Black.ttf) format("truetype");
+  src: url("./fonts/Poppins-Light.ttf") format("truetype");
+  src: local("Poppins"), local("Poppins"),
+    url("./fonts/Poppins-ThinItalic.ttf") url("./fonts/Poppins-Thin.ttf")
+      url("./fonts/Poppins-SemiBoldItalic.ttf")
+      url("./fonts/Poppins-SemiBold.ttf") url("./fonts/Poppins-Regular.ttf")
+      url("./fonts/Poppins-MediumItalic.ttf") url("./fonts/Poppins-Medium.ttf")
+      url("./fonts/Poppins-Light.ttf") url("./fonts/Poppins-LightItalic.ttf")
+      url("./fonts/Poppins-ExtraLight.ttf")
+      url("./fonts/Poppins-ExtraLightItalic.ttf")
+      url("./fonts/Poppins-ExtraBoldItalic.ttf")
+      url("./fonts/Poppins-ExtraBold.ttf") url("./fonts/Poppins-Bold.ttf")
+      url("./fonts/Poppins-BlackItalic.ttf") url("./fonts/Poppins-Black.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", Inter, sans-serif;
+}
+
+.layout-content {
+  width: 100vw;
+  overflow-y: auto;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
